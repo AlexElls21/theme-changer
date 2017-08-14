@@ -3,7 +3,8 @@ import React, { Component } from 'react';
 export default class TextContainer extends Component {
   render() {
     return (
-      <div className="textContainer">
+      <div className="textContainer"
+            onChange={(e)=> this.props.update(e.target.value)}>
         <p style={ { color: this.props.fontColor, fontFamily: this.props.fontFamily, fontSize: this.props.fontSize } }>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut efficitur quam. Morbi eleifend sollicitudin orci nec condimentum. Vestibulum id efficitur nisi. Sed egestas venenatis metus a interdum. Morbi rutrum ullamcorper leo quis mattis. Mauris eu libero erat. Donec efficitur felis id accumsan tempus. Proin interdum lacus dui, et egestas diam viverra bibendum. Praesent ultrices augue ac leo rutrum, ac mattis sapien pretium.
           <br />
